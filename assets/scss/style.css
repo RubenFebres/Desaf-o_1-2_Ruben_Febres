@@ -80,46 +80,151 @@ body {
   display: flex;
   height: 100vh;
 }
+body h3 {
+  font-size: 18px;
+}
 body aside {
+  border: solid 2px;
+  border-color: darkgrey;
   display: flex;
   flex-direction: column;
   width: 300px;
-  background-color: rgb(251, 149, 173);
+}
+body aside p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  opacity: 0.9;
+}
+body aside .contacto {
+  padding: 5px 20px;
+  display: flex;
+  margin: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+body aside .contacto .perfil {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+body aside .contacto .perfil .avatar {
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+body aside .contacto .perfil .avatar img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body aside .contacto .perfil .name {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+body aside .contacto .perfil .name .estado {
+  opacity: 0.5;
+  font-size: small;
+}
+body aside .contacto .contactos_menu {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+body aside .contacto i {
+  display: flex;
+  opacity: 0.5;
+  font-size: large;
+}
+body aside .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+body aside .button .enviar {
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 255, 42);
+  display: flex;
+  height: 40px;
+  width: 170px;
+  border: none;
+}
+body aside .button .enviar:hover {
+  background-color: green;
+}
+body aside hr {
+  display: flex;
+  opacity: 0.5;
 }
 body aside .contactos {
-  border-radius: 10px;
-  margin: 10px;
-  display: flex;
-  background-color: blue;
-  margin-top: 10px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(0, 255, 42) white;
+  height: 100%;
 }
-body aside .avatar {
+body aside .contactos ul {
   display: flex;
-  width: 40px;
-  height: 40px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  padding-block: 10px;
 }
-body aside .avatar img {
+body aside .contactos ul li:hover {
+  background-color: rgb(194, 194, 194);
+}
+body aside .contactos ul li {
   width: 100%;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: solid 2px rgb(211, 211, 211);
 }
-body main {
-  gap: 10px;
+body aside .contactos ul li .profile {
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+body aside .contactos ul li .profile img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body aside .contactos ul li .profile h3 {
+  font-size: medium;
+}
+
+main {
+  gap: 5px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-grow: 1;
-  background-color: rgb(235, 248, 164);
+  background-color: rgb(240, 241, 232);
 }
-body main .chat {
+main .chat {
   display: flex;
-  width: 300px;
+  width: 200px;
   height: 200px;
 }
-body main .chat img {
+main .chat img {
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 100%;
   width: 100%;
 }
-body main .text_main {
+main .text_main {
   text-align: center;
   max-width: 500px;
   display: flex;
